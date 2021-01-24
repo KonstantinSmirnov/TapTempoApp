@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         tapButton.layer.borderColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
         tapButton.layer.cornerRadius = 0.5 * tapButton.bounds.size.width
         tapButton.clipsToBounds = true
+        
     }
 
     @IBAction func tapButtonPressed(_ sender: UIButton) {
