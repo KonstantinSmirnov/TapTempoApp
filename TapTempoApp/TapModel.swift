@@ -41,6 +41,7 @@ class TapModel: CanCalculateTempo {
     func reset() {
         timer.invalidate()
         milliseconds = 0
+        bpm = 0
         msResultsArray = []
         print("Reset done")
     }
@@ -50,8 +51,8 @@ class TapModel: CanCalculateTempo {
         if msResultsArray.count > 0 {
             bpm = 60000.00 / Double(msResultsArray.reduce(0, +)/msResultsArray.count)
         }
-           
-        return String(format: "%.0f", bpm)
+
+        return String(format: "%03d", Int(bpm))
     }
     
     func addResultToArray(result: Int) {
