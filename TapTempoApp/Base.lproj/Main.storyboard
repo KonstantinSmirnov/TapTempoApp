@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,28 +13,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TapTempoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CD1-Bb-tSh">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhS-iL-EPX">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="72"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5ao-0Q-nCV">
-                                        <rect key="frame" x="0.0" y="448" width="414" height="448"/>
+                                        <rect key="frame" x="0.0" y="240" width="320" height="240"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0V-DC-wfy">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwM-ZJ-Aul">
-                                                        <rect key="frame" x="126.76105535520833" y="32.261835503019029" width="159.99999999999989" height="159.99999999999989"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwM-ZJ-Aul">
+                                                        <rect key="frame" x="80" y="-20" width="160" height="160"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="160" id="FaK-iV-UlC"/>
+                                                            <constraint firstAttribute="width" constant="160" id="rz8-YB-dbl"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
                                                         <state key="normal" title="TAP"/>
                                                         <connections>
                                                             <action selector="tapButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFr-ei-0Gm"/>
@@ -42,9 +45,13 @@
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="qwM-ZJ-Aul" firstAttribute="centerX" secondItem="Q0V-DC-wfy" secondAttribute="centerX" id="GBM-WM-WCj"/>
+                                                    <constraint firstItem="qwM-ZJ-Aul" firstAttribute="centerY" secondItem="Q0V-DC-wfy" secondAttribute="centerY" id="XH5-4g-OyP"/>
+                                                </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxQ-hm-RE5">
-                                                <rect key="frame" x="0.0" y="224" width="414" height="224"/>
+                                                <rect key="frame" x="0.0" y="120" width="320" height="120"/>
                                                 <state key="normal" title="RESET"/>
                                                 <connections>
                                                     <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="scW-0s-F6Q"/>
