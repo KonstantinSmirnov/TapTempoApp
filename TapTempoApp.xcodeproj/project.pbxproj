@@ -13,6 +13,7 @@
 		B35E3EA525BDC0A10018AADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35E3EA325BDC0A10018AADC /* Main.storyboard */; };
 		B35E3EA725BDC0A40018AADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35E3EA625BDC0A40018AADC /* Assets.xcassets */; };
 		B35E3EAA25BDC0A40018AADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35E3EA825BDC0A40018AADC /* LaunchScreen.storyboard */; };
+		B35E3EB325BDC1890018AADC /* TapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E3EB225BDC1890018AADC /* TapModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B35E3EA625BDC0A40018AADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B35E3EA925BDC0A40018AADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B35E3EAB25BDC0A40018AADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35E3EB225BDC1890018AADC /* TapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B35E3E9D25BDC0A10018AADC /* AppDelegate.swift */,
+				B35E3EB225BDC1890018AADC /* TapModel.swift */,
 				B35E3E9F25BDC0A10018AADC /* SceneDelegate.swift */,
 				B35E3EA125BDC0A10018AADC /* ViewController.swift */,
 				B35E3EA325BDC0A10018AADC /* Main.storyboard */,
@@ -140,6 +143,7 @@
 				B35E3EA225BDC0A10018AADC /* ViewController.swift in Sources */,
 				B35E3E9E25BDC0A10018AADC /* AppDelegate.swift in Sources */,
 				B35E3EA025BDC0A10018AADC /* SceneDelegate.swift in Sources */,
+				B35E3EB325BDC1890018AADC /* TapModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
